@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1287886665">
+    <data-source source="LOCAL" name="Rails bank: development" uuid="5097955b-c2c1-4b1e-b5ad-be01cf2e664c">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/bank_d</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfcedfd8dfcfdfcbdfc7dfd3dfc5dfdf</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails bank: test" uuid="58b60422-d6e6-4da4-88bf-d05264b9945c">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/bank_t</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfcedfd8dfcfdfcbdfc7dfd3dfc5dfdf</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails bank: production" uuid="b987ca92-9dcf-4d29-94d4-3047bb09bbac">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/bank_p</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfcedfd8dfcfdfcbdfc7dfd3dfc5dfdf</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

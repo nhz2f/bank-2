@@ -1,0 +1,2 @@
+module ApprankHelper
+end

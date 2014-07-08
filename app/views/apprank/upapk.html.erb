@@ -1,0 +1,11 @@
+<div>
+<%= form_for(@apk,:html => {:multipart => true}) do |f|%>
+    <%= f.label :银行名称%><br>
+    <%= f.text_field :bankname%><br>
+    <%= f.label :版本号%><br>
+    <%= f.text_field :version%><br>
+    <%= f.file_field :path %><br>
+    <%= f.submit :上传%>
+<%end%>
+
+</div>
