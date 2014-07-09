@@ -24,6 +24,10 @@ class ApprankController < ApplicationController
     end
   end
 
+  def downrule
+    send_file 'public/fbb.jpg'
+  end
+
 private
   def getApkInfo
     params.require(:apk).permit(:bankname,:version,:path)

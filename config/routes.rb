@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   match '/rule', to: 'apprank#rule', via: 'get'
   match '/apks', to: 'apprank#upapk', via: 'get'
   match '/apks', to: 'apprank#saveapk', via: 'post'
+  match '/downrule', to: 'apprank#downrule', via: 'get'
 
   root 'apprank#index'
 end
