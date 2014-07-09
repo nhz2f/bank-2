@@ -1,3 +1,3 @@
 class Rankinfo < ActiveRecord::Base
-  paginates_per 1
+  paginates_per 2
 end
