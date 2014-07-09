@@ -1,10 +1,8 @@
 <h1>APP RANK</h1>
-<%= link_to '规则页面', rule_path%>
-<table>
-  <tr>
-    <th>银行名称</th>
-    <th>版本号</th>
-    <th>分数</th>
-    <th>更新时间</th>
-  </tr>
-</table>
+<%= link_to '规则页面', rule_path%><br>
+<%= paginate @infos %>
+<% for info in @infos%>
+  <h2><%= info.name %><%= info.score%></h2>
+<% end %>
+<%= paginate @infos %>
+

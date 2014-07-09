@@ -9,6 +9,8 @@ gem 'devise'
 gem 'jquery-ui-rails', '~> 4.2.1'
 #active admin
 
+#分页
+gem 'kaminari'
 
 gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

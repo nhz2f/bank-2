@@ -4,7 +4,7 @@ class ApprankController < ApplicationController
   end
 
   def rank
-
+    @infos = Rankinfo.order(:score).page(params[:page]) #默认score从小到大排列
   end
 
   def rule
