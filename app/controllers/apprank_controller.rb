@@ -8,7 +8,7 @@ class ApprankController < ApplicationController
   end
 
   def rule
-
+    @content = getRuleContent
   end
 
   def upapk
@@ -25,7 +25,7 @@ class ApprankController < ApplicationController
   end
 
   def downrule
-    send_file 'public/fbb.jpg'
+    send_file getRulePath
   end
 
 private
@@ -33,4 +33,11 @@ private
     params.require(:apk).permit(:bankname,:version,:path)
   end
 
+  def getRulePath
+    "public"+Rulefile.last.path.url
+  end
+
+  def getRuleContent
+    Rulefile.last.content
+  end
 end

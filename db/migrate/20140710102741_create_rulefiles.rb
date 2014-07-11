@@ -4,6 +4,7 @@ class CreateRulefiles < ActiveRecord::Migration
       t.string :name
       t.string :version
       t.string :path
+      t.text   :content
 
       t.timestamps
     end

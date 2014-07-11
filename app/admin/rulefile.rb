@@ -2,7 +2,7 @@ ActiveAdmin.register Rulefile do
 
   controller do
     def permitted_params
-      params.permit rulefile: [:name, :version, :path]
+      params.permit rulefile: [:name, :version, :path, :content]
     end
   end
 
@@ -11,6 +11,7 @@ ActiveAdmin.register Rulefile do
       f.input :name
       f.input :version
       f.input :path
+      f.input :content
     end
     f.actions
   end

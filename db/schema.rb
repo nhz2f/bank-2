@@ -47,11 +47,11 @@ ActiveRecord::Schema.define(version: 20140710102741) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "apks", force: true do |t|
+    t.string   "bankname"
+    t.string   "version"
     t.string   "path"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "bankname"
-    t.string   "version"
   end
 
   create_table "rankinfos", force: true do |t|
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 20140710102741) do
     t.string   "name"
     t.string   "version"
     t.string   "path"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

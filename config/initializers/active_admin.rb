@@ -1,5 +1,8 @@
 ActiveAdmin.setup do |config|
 
+  # To load a javascript file:
+  config.register_javascript 'ckeditor/init.js'
+
   # == Site Title
   #
   # Set the title that is displayed on the main layout
