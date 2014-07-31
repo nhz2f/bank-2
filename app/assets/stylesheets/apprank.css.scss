@@ -1,3 +1,44 @@
-// Place all the styles related to the apprank controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  word-wrap:break-word; overflow:hidden;
+  p{
+    text-indent:2em;
+    padding:5px;
+  }
+}
+
+#upapk{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  input{
+    margin-top: 10px;
+  }
+}
+
+.all{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.footer{
+  small{
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
+  }
+  span{
+    float: right;
+    padding-right: 10px;
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
+  }
+}

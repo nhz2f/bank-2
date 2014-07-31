@@ -8,7 +8,8 @@ class ApprankController < ApplicationController
   end
 
   def rule
-    @content = getRuleContent
+    tmp = getRuleContent
+    @content = tmp ? tmp.split(/\r\n/) : false
   end
 
   def upapk
@@ -25,7 +26,8 @@ class ApprankController < ApplicationController
   end
 
   def downrule
-    send_file getRulePath
+    tmp = getRulePath
+    tmp ? (send_file tmp) : (redirect_to home_path)
   end
 
 private
@@ -34,10 +36,11 @@ private
   end
 
   def getRulePath
-    "public"+Rulefile.last.path.url
+    url = Rulefile.last.to_s.empty? ? false : Rulefile.last.path.url
+    url ? "public#{url}" : false
   end
 
   def getRuleContent
-    Rulefile.last.content
+    Rulefile.last.to_s.empty? ? false : Rulefile.last.content
   end
 end

@@ -1,6 +1,10 @@
-<div>
-  <%= link_to 'Home', home_path%>
-  <%= link_to 'APP排行榜', rank_path%>
-  <%= link_to '规则页面', rule_path%>
-  <%= link_to '上传APK', apks_path%>
-</div>
+<%#= image_tag("logo.png", class: "logo")%>
+<nav class="uk-navbar">
+  <ul class="uk-navbar-nav">
+    <li><%= link_to 'Home', home_path%></li>
+    <li><%= link_to 'APP排行榜', rank_path%></li>
+    <li><%= link_to '规则页面', rule_path%></li>
+    <li><%= link_to '上传APK', apks_path%></li>
+    <li><%= link_to "下载规则", downrule_path %></li>
+  </ul>
+</nav>

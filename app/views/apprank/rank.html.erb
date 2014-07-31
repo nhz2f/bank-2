@@ -1,6 +1,6 @@
-<h1>APP RANK</h1>
+<h1>APP 排行榜</h1>
 <%= paginate @infos %>
-<table>
+<table class="uk-table uk-table-striped">
   <tr>
     <th>银行名称</th>
     <th>版本号</th>
@@ -9,10 +9,10 @@
   </tr>
   <% for info in @infos%>
       <tr>
-          <th><%= info.name %></th>
-          <th><%= info.version %></th>
-          <th><%= info.score %></th>
-          <th><%= info.updated_at.strftime("%F") %></th>
+          <td><%= info.name %></td>
+          <td><%= info.version %></td>
+          <td><%= info.score %></td>
+          <td><%= info.updated_at.strftime("%F") %></td>
       </tr>
 
   <% end %>
